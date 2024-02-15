@@ -1,7 +1,7 @@
 import {createSlice} from "@reduxjs/toolkit"
 
 export const potentialCountriesSlice = createSlice({
-  Name: "potentialCountries",
+  name: "potentialCountries",
   initialState: {
     value: [
       {

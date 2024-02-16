@@ -12,11 +12,11 @@ function App() {
 
     let currentDisplay = useSelector(selectDisplay)
     console.log("Display: ", currentDisplay)
-    
+
     return (
         <div className="App font-link">
             <Header />
-            <OptionDisplay />
+            {currentDisplay ? <MainDisplay/> :<OptionDisplay />}
         </div>
     );
 }
